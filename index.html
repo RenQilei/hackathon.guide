@@ -1,267 +1,309 @@
 <!DOCTYPE html>
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-        <title>Hackathon Guide</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="twitter:creator" content="@JoshData" />
+  <title>黑客松指南</title>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="static/css/main.css">
+  <meta name="twitter:creator" content="@JoshData" />
+  <meta name="translator" content="任琦磊">
 
-        <!--[if lt IE 9]>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="static/css/main.css">
+
+  <!--[if lt IE 9]>
             <script src="static/js/html5-3.6-respond-1.1.0.min.js"></script>
         <![endif]-->
-    </head>
-    <body>
+</head>
 
-    <a href="https://github.com/JoshData/hackathon.guide" class="visible-md visible-lg"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
-    
-    <div class="jumbotron">
-      <div class="container">
-        <h1><span>How to run a successful</span> Hackathon</h1>
-        <p>A step-by-step guide by <a href="http://razor.occams.info">Joshua Tauberer</a> based on running and participating in many hackathons.</p>
-      </div>
-    </div>
+<body>
 
+  <a href="https://github.com/JoshData/hackathon.guide" class="visible-md visible-lg"><img style="position: absolute; top: 0; right: 0; border: 0;"
+      src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67"
+      alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+
+  <div class="jumbotron">
     <div class="container">
-      <div id="body-content">
+      <h1><span>如何举办一场成功的</span>黑客松（Hackathon）</h1>
+      <p>作者 <a href="http://razor.occams.info">Joshua Tauberer</a> 基于多次举办和参与黑客松经验总结的一份入门指导。</p>
+    </div>
+  </div>
 
-        <p>These notes come from five successful years of <a href="http://dc.opendataday.org">Open Data Day DC</a> and other civic hackathons that I&rsquo;ve run, sponsored, or participated in.</p>
+  <div class="container">
+    <div id="body-content">
 
-        <p>The ideas have been inspired by many individuals, especially including my Open Data Day DC co-organizers Eric Mill, Sam Lee, Katherine Townsend, and Julia Bezgacheva, as well as Justin Grimes, Matt Bailey, Leah Bannon, Laurenellen McCann, and Greg Bloom.</p>
+      <p>所有的笔记都来自于 <a href="http://dc.opendataday.org">Open Data Day DC</a> 五年成功的举办经验，以及其它我举办、赞助和参与的社会黑客松活动。</p>
 
-        <hr>
+      <p>所有想法的灵感还来自于许多人，尤其是我的 Open Data Day DC 的联合组织者们，Eric Mill、Sam Lee、Katherine Townsend 和 Julia Bezgacheva，以及
+        Justin Grimes、Matt Bailey、Leah Bannon、Laurenellen McCann 和 Greg Bloom.</p>
 
-        <h2 id="what">What is a hackathon?</h2>
+      <hr>
 
-        <h3>Defined</h3>
+      <h2 id="what">什么是黑客松？</h2>
 
-        <p>I define &ldquo;hackathon&rdquo; very broadly:</p>
+      <h3>定义</h3>
 
-        <ul>
-          <li>Hacking is creative problem solving. (It does not have to involve technology.)</li>
-          <li>A hackathon is any event of any duration where people come together to solve problems. Most hackathons I&rsquo;ve run also have a parallel track for workshops.</li>
-        </ul>
+      <p>我认为“黑客松”的定义应该是非常广泛的：</p>
 
-        <p>Participants typically form groups of about 2-5 individuals, take out their laptops (if the event is technology themed), and dive into problems. Training workshops are a great parallel track especially for newcomers but also for all participants.</p>
+      <ul>
+        <li>Hacking 指的是创造性的解决问题（这并不需要引入技术）。</li>
+        <li>黑客松不限时间、不限活动，旨在聚集大家到一起并尝试解决问题。我举办的大多数黑客松通常会同期举办一些交流会（Workshop）。</li>
+      </ul>
 
-        <h3>Positive energy</h3>
+      <p>参与者通常 2~5 人一组，携带笔记本电脑（如果活动是技术向主题的话），投入到问题解决中。活动期间同步组织一些培训交流会对参与者，尤其是新手来说是大有裨益的。</p>
 
-        <p>Hackathons have gotten a bad rap because of <i>some</i> that have an unhealthy, competitive structure, and for setting unrealistic expectations. Don&rsquo;t run a hackathon like that and you&rsquo;ll be on the right track. Here are the goals I keep in mind:</p>
+      <h3>正能量</h3>
 
-        <ul>
-          <li>Strengthen the community that the hackathon is for.</li>
-          <li>Be welcoming to newcomers to the community.</li>
-          <li>Provide an opportunity for participants to learn something new.</li>
-          <li>Provide a space and a time for participants to make headway on problems they are interested in.</li> 
-        </ul>
+      <p><i>一些</i>黑客松有不健康的、竞争性的组织结构，以及不切实际的预期设置，将会对黑客松活动带来极为不良的影响。千万不要举办那样的黑客松活动，你应该使用正确的方式组织黑客松。这里有一些我一直谨记的目标：</p>
 
-        <p>Don&rsquo;t expect to have actually solved a problem by the end of the hackathon. Real life problems are hard! Think of the hackathon as a pit-stop on a long journey to solve problems or as a training session to prepare participants for solving problems.</li>
+      <ul>
+        <li>巩固黑客松活动的社区。</li>
+        <li>欢迎新来者加入社区。</li>
+        <li>为参与者提供学习新知识的机会。</li>
+        <li>为参与者提供场地和时间，让他们能够在他们感兴趣的问题上实现一些进步。</li>
+      </ul>
 
-        <p>Since you&rsquo;re not going to solve a problem, don&rsquo;t put unrealistic (and unhealthy) pressure on your participants. Don&rsquo;t stay up all night, don&rsquo;t pump participants with caffeine, and don&rsquo;t make winners and losers. Just don&rsquo;t. There has never been beer, competitions, or time pressure at my hackathons. Participants should come energized and be greeted with positive energy.</p>
+      <p>不要指望黑客松结束就可以确实解决问题。现实生活中的问题总是复杂的！将黑客松理解为问题解决过程中的一个节点，或者是为参与者准备解决问题提供了培训讲习机会。</li>
 
-        <h3>Wait &mdash; maybe a hackathon isn&rsquo;t the right thing</h3>
+        <p>既然你不是为了解决问题，那就不要给你的参与者施加不切实际的（以及不健康的）压力。不需要整晚通宵，不需要给参与者灌入大量的咖啡，也不需要制造胜负结果。仅仅是不需要。我的黑客松活动中从来没有啤酒、竞争以及时间压力。参与者应该活力充沛地参与活动，并从活动中获得正能量。</p>
 
-        <p>My notes below are mostly logistical and assume a technology-centric approach. I take it for granted that you want to run a hackathon. But read <a href="https://medium.com/@elle_mccann/so-you-think-you-want-to-run-a-hackathon-think-again-f96cd7df246a">So You Think You Want to Run a Hackathon? Think Again</a> by Laurenellen McCann for thoughts on other (and sometimes better) ways of engaging a community.</p>
+        <h3>等一下 —— 可能黑客松并不是正确的选择</h3>
 
-        <p>Also consider not calling your event a &ldquo;hackathon&rdquo;. Not everyone will know what you mean, and &ldquo;hacking&rdquo; might make it <a href="https://twitter.com/erinrwhite/status/707956467224190976">less likely that all groups will feel welcome</a>.</p>
+        <p>我下面的笔记偏向于组织性的，并假设以技术为中心的方式。我默认你将要组织一场黑客松。但请先阅读 Laurenellen McCann 所著的 <a href="https://medium.com/@elle_mccann/so-you-think-you-want-to-run-a-hackathon-think-again-f96cd7df246a">《所以你认为你想要组织一场黑客松？再想想（So
+            You Think You Want to Run a Hackathon? Think Again）》</a> 并思考其它（更好的）社区激励的方式。</p>
 
-		<p>If the goal of your hackathon is to market a product, stop here and read a different guide. Your goals and my goals are not the same.</p>
+        <p>同时，考虑不要把你的活动称之为“黑客松”，因为并不是每个人都知道你想表达的意思，“hacking”也可能让人觉得<a href="https://twitter.com/erinrwhite/status/707956467224190976">活动并没有欢迎所有人参与进来（less
+            likely that all groups will feel welcome）</a>。</p>
+
+        <p>当然，如果你组织的黑客松活动的目的是为某个产品宣传造势，那么你应该去阅读别的指南。咱们的目标并不相同。</p>
 
 
 
-        <h2 id="welcoming">Welcoming newcomers</h2>
+        <h2 id="welcoming">欢迎新来者</h2>
 
-        <p>The hardest thing about running a successful hackathon is being welcoming to newcomers and helping them get involved in an activity.</p>
+        <p>举办一个成功的黑客松活动的最难之处就在于欢迎新来者参与其中，并帮助他们融入到活动中来。</p>
 
-        <p>Newcomers often suffer from &ldquo;<a href="https://en.wikipedia.org/wiki/Impostor_syndrome">imposter syndrome</a>&rdquo;, the feeling that they don&rsquo;t belong because they don&rsquo;t have skills, aren&rsquo;t smart enough, etc. They&rsquo;re wrong, of course, but until they feel like they belong they will not be able to have a fulfilling experience. It is the hackathon organizer&rsquo;s job to help them realize they have something to contribute.</p>
+        <p>新手通常会受困于“<a href="https://en.wikipedia.org/wiki/Impostor_syndrome">冒名顶替症候群（imposter syndrome）</a>”的问题，他们通常觉得自己并没有足够的技能或并不足够聪明等，因此成功并不能归功于自己。当然他们的想法并不正确，而且如果不能肯定自己的能力的话，他们并不能获得完整的体验。黑客松组织者的工作就是帮助他们认识到他们自己的能力和贡献值。</p>
 
-        <p>First time hackathon participants are often overwhelmed when it comes time to finding a project to work on. They may not yet know how to relate their own skills to the sorts of projects being worked on. Knowing how to be useful is a skill in itself. You will need to guide them to a project and through a process for them to realize how they can contribute. If you have too many lost participants and not enough help in getting them started on a project, they will leave &mdash; try to avoid that.</p>
+        <p>黑客松参与者在第一次参与中往往对于如何找到一个合适的项目感到手足无措。他们还不能很好地将自己的技能协调和应用于项目中。掌握如何让技能变得有用本身就是一项技能。你需要根据项目有针对性地指导他们如何在项目中贡献自己的价值。如果有太多迷茫的参与者不能获得足够的帮助来开始一个项目，他们会选择离开
+          —— 选择远离活动。</p>
 
-        <p>The hackathon organizer must make sure that everyone has something to do. One way to do this is to have a list of project leaders ahead of time: people you know are coming with particular projects that you can guide other participants to. And you can work to make sure your hacking projects are ready to accept newcomers. You can also hold non-project activities &mdash; workshops, described below &mdash; which are easier for newcomers to join.</p>
+        <p>黑客松的组织者必须确保每个人都有事可做。一个很好的方式是提前确定一个项目主导者的名单：你确定会参与到特定的项目中并可以带领其他参与者的人。同时，你还需要确定所有预设项目都能够接纳新手参与其中。你还可以组织非项目活动
+          —— 交流会，以让新手能够更容易地参与其中，相关内容下文会详细描述。</p>
 
-        <p>You could also consider pairing newcomers with mentors or holding a pre-event session just for newcomers, as <a href="https://blog.wikimedia.org/2017/05/31/vienna-hackathon-learnings/">Wikimedia recently did</a>.</p>
+        <p>你还可以考虑为新手配备导师，或者为新手们组织一场预备活动，譬如像 <a href="https://blog.wikimedia.org/2017/05/31/vienna-hackathon-learnings/">Wikimedia</a>
+          最近组织的这样。</p>
 
 
         <h2 id="hacking">Hacking</h2>
 
-        <p>The hacking track is for participants to dive into problems. Often groups of 2-5 individuals form around a project, such as building a new data visualization, writing a document, or collaboratively investigating a problem. Participants take out their laptops, connect to power and wifi, and get working.</p>
+        <p>Hacking 环节需要参与者投如到问题中去。通常一个项目小组为 2~5 人，譬如创建一个数据可视化项目，撰写文件，或者合作地审查一个问题。参与者使用他们的笔记本，连上电源和 wifi，就可以开始工作了。</p>
 
-        <p>Hacking begins with project introductions. Participants that bring projects to the event have an opportunity to briefly (1 minute max) explain what they are working on at the very start of the event so that other participants can join that project. At the end of the event, a wrap-up session gives each project a chance to demonstrate some accomplishments.</p>
+        <p>Hacking 首先需要项目介绍。应该给有明确项目计划的参与者提供一个面向其他人简单阐述（最多 1
+          分钟）的机会，让其他参与者在一开始就知道这个项目应该如何参与其中。活动末期，需要设置一个路演环节，为所有项目提供一个阐述他们完成的成果。</p>
 
-        <h3>Cultivating Good Projects</h3>
+        <h3>创造优质项目</h3>
 
-        <p>Not every project makes a good hackathon project. It is extremely important to maximize the following qualities in the projects at your event:</p>
+        <p>并不是每个项目都足以成为优质的黑客松项目。在你的活动中，要尽可能地让每个项目最大化下述的质量指标：</p>
 
         <ul>
-        <li><strong>Clearly articulated.</strong> Projects should have a clear question or problem they are trying to solve <em>plus</em> a reasonably specific proposed solution.</li>
-        <li><strong>Attainable.</strong> Most projects will accomplish about 25% of what they think they can accomplish in the limited time they have. Manage each project&rsquo;s goals so participants are able to feel accomplished at the end of the session, not interrupted.</li>
-        <li><strong>Easy to onboard newcomers.</strong> Projects should have ready-to-go tasks for newcomers with a variety of skills and at a variety of skill levels. For coding projects, these tasks can&rsquo;t require an intimate understanding of the code base, and make sure the build environment can be spun up in less than 20 minutes. Make a list of tasks or create github issues ahead of time!</li>
-        <li><strong>Led by a stakeholder.</strong> A stakeholder (or &ldquo;subject matter expert&rdquo;) guides a project to real-world relevance. Projects without a stakeholder can &ldquo;solve&rdquo; a problem that doesn&rsquo;t exist. Ideally the leader (or one of the leaders) is a stakeholder, or a good proxy for a stakeholder. I strongly recommend reviewing Laurenellen McCann&rsquo;s <a href="http://www.buildwith.org/">Build With, Not For</a> series on involving stakeholders in all civic tech work. Additionally, it is never enough for a project leader to just be an ideas person. Beware when the leader is a stakeholder but can&rsquo;t foresee how he or she might be implementing along with the rest of the team.</li>
-        <li><strong>Organized.</strong> For projects with four or more members, especially newcomers, the project leader&rsquo;s role should be to coordinate, ensuring each team member has something to work on and helping to welcome new team members.</li>
+          <li><strong>目标明确的。</strong>项目应当是去试图解决一个明确的问题。<em>外加</em>提出一个合理的、详细的解决方案。</li>
+          <li><strong>可实施的。</strong>大多数项目在规定时间内可以完成他们计划完成的 25% 左右。有效地管理每一个项目的目标有助于参与者能够在活动期间达到预期成果，而不会感到挫败。</li>
+          <li><strong>新手易于参与的。</strong>项目应该为用于不同技能和能力值的新手均提供随时上手的任务。对于编程活动来说，任务不应该需要深入理解代码库，反之应该确保所有的开发环境可以在 20
+            分钟内快速上手。制定一个任务清单，或者提前创建一些 github issues！</li>
+          <li><strong>问题的需求方主导。Led by a stakeholder.</strong>问题需求方（或者是相关问题的专家）可以引导项目与现实生活中的问题进行关联。没有需求方的项目很有可能只是解决了一个没有实际应用场景的问题。理想的情况是项目负责人（或负责人之一）就是问题需求方，或是需求方的中介。我强烈建议阅读一下
+            Laurenellen McCann 所著的<a href="http://www.buildwith.org/">《不要为了构建而构建（Build With, Not For）》</a>系列关于在各类公众技术活动中引入问题需求方的内容。同时，项目负责人最好还是个有足够多的想法的人。以防止尽管负责人是需求方，但他不能够预见到他/她如何带领团队其他成员完成项目的情况发生。</li>
+          <li><strong>有组织性的。</strong>对于一个四人或以上成员，尤其还包括新手的项目来说，项目负责人应该承担起协调者的角色，确保每个团队成员都有一个工作可做，并帮助团队接纳新成员。</li>
         </ul>
 
 
-        <p>Treat these bullets like a checklist. Projects that think about themselves in terms of these qualities tend to be happier and more productive.</p>
+        <p>上述几点可以视为检查清单。满足上述质量标准的项目本身就会变得更为有趣和高效。</p>
 
-        <p>If you know what projects are going to be worked on at the event, the earlier you can get those projects thinking about this the better. Meet with project leads and talk about these components of their project ahead of time if possible. As an organizer, having this information about projects can also help you route participants to projects they may want to work on.</p>
+        <p>如果你可以知道活动中会出现的项目，那么越早获得这些项目的情况越好。有可能的话，你可以与项目负责人见面，并与其讨论他的项目中的组件等。作为一个组织者，获得项目的信息可以帮助你引导参与者更好的完成他们的项目。</p>
 
-        <h3>At Themed Hackathons</h3>
+        <h3>主题黑客松</h3>
 
-        <p>A themed hackathon is one in which the projects are confined to a particular problem: such as <a href="http://www.nationalgeographic.com/food-forum/hackathon">food sustainability</a> or <a href="http://rebuildingreentry.com/">returning citizens</a>. Themed hackathons are able to attract subject matter experts (something that open-ended hackathons like Open Data Day DC are not good at), and projects typically revolve around problems that the subject matter experts bring to the table.</p>
+        <p>主题黑客松为所有项目限制了一个特定的问题：譬如<a href="http://www.nationalgeographic.com/food-forum/hackathon">食品的可持续发展（food
+            sustainability）</a>或者<a href="http://rebuildingreentry.com/">回归市民（returning citizens）</a>。主题黑客松可以吸引该行业的问题专家（这是一些像
+          Open Data Day DC 这列开放式黑客松无法做到的），并且项目可以始终围绕着专家提供的这些问题。</p>
 
-        <p>When themed hackathons are also technology hackathons, there is a common problem: Subject matter experts can readily identify problems in their field but cannot always turn those problems into workable technology projects. Other participants may be ready to apply their skills but not know anything about the hackathon&rsquo;s theme. Bridging that gap requires careful planning ahead of time.</p>
+        <p>如果主题黑客松是一场技术黑客松，就有一个常见的问题：行业专家可以很快的支持他们熟悉的领域的实际问题，但他们通常不能够将这些问题转化为可执行的技术性项目。其他参与者可能有足够的技能，但并不了解这场黑客松的主题。这就需要在活动开始前认真地计划如何消除中间的隔阂。</p>
 
-        <p>What often results is a division of the room into three groups:</p>
+        <p>通常的结果就是参与者会逐渐地形成三组：</p>
 
         <ol>
-          <li>Subject matter experts and other participants successfully working together.</li>
-          <li>Subject matter experts working with other subject matter experts on problem investigation but not implementation.</li>
-          <li>Other participants struggling to find something relevant to work on / implementing a solution of minimal value to solving the theme&rsquo;s actual problems.</li>
+          <li>行业专家与其他参与者在一起很好地合作。</li>
+          <li>行业专家与其他专家一起就问题展开调查，但并不解决问题。</li>
+          <li>其他参与者就纠结于找到可以上手的相关项目，或可以用于解决该主题下实际问题的最小解决方案。</li>
         </ol>
 
-        <p>#1 is great. #2 is fine if the group is happy. But #3 is bad: participants without subject matter guidance will feel lost. To avoid this, make sure you have enough workable projects for everyone ahead of the event. Work with the subject matter experts before the event to turn their problems into projects. See the section Cultivating Good Projects above to ensure there is a coherent question, that the necessary resources exist (e.g. datasets), and that the skills needed for the project match the skills expected to be brought by other participants (and in sufficient quantity).</p>
+        <p>情况 1 很不错。情况 2 如果小组讨论愉快的话也还说的过去。但情况 3
+          就很糟糕：没有主题相关指导的参与者会感到迷茫。为了避免这种情况，确保你能够在活动开始前为每个人准备好可以参与的项目。在活动开始前就与行业专家讨论并将他们抛出的问题转化为项目。参考上面的“创造优质项目”一节，确定相关的问题有必要的资源准备（如数据库），并确保项目需要的技能与参与者期望通过项目获得的技能相符（且技能量是足够的）。</p>
 
-        <p>Additionally, a subject matter expert may propose many ideas but he or she can only effectively participate in a single project during the event, so ensure that there is at least one subject matter expert + workable project for about every four non-expert participants.</p>
+        <p>此外，尽管行业问题专家能够提出很多的想法，但是他们只能够有效地参与到其中一个项目中去，所以尽可能的为一个可执行的项目安排约四个非行业专家参与者和至少一个行业专家。</p>
 
-        <h3>Placing Newcomers into New Projects</h3>
+        <h3>将新手安排到新项目中</h3>
 
-        <p>Onboarding participants onto existing projects can be very difficult. It is one of the hardest parts of hacking. So have ideas for new projects that are especially easy for participants to get started with if they can&rsquo;t join an existing project. Having project ideas ready is especially important if you do not expect many participants to bring projects! And always be open to project ideas from participants. A project of one, meaning someone working alone, is okay too!</p>
+        <p>对新晋参与者投入到已经存在的项目中来说可能是比较困难的。这可能算是 hacking
+          的难点之一。所以请为不能够参与到已存在的项目汇中去的参与者构思出一些新的简单易上手的项目。另一件很重要的事情是提前准备好一些项目以防止许多参与者并没有提前准备好项目计划！同时，保持对参与者开放采纳他们的项目想法。也要支持一个人单独地完成项目。</p>
 
-        <h3>Other Tips</h3>
+        <h3>其它建议</h3>
 
-        <p>Do not allow anyone to pitch an idea that they will not be working on at the event, unless there really are not enough ideas to go around. Otherwise, this is a waste of everyone&rsquo;s valuable time.</p>
+        <p>不应该允许参与者路演与活动无关的项目主题，除非他们对主题确实没有足够的想法。否则，这就是在浪费每个人的宝贵时间了。</p>
 
-        <p>Once hacking has begun, do not interrupt the hackers <em>except</em> to ensure that the hacking is going smoothly, to check that everyone has something to do, and to keep people on the overall schedule. Mid-day activities such as lunch-time speakers and video calls with people off-site are incredibly distracting for participants who are now eager to get working on a problem.</p>
-
-
-        <h2 id="training">Training</h2>
-
-        <p>A successful hackathon might be just hacking, just training, or both hacking and training.</p>
-
-        <p>If you have a significant number of newcomers, having training workshops is a great way to give them something to do that they will be more comfortable with than diving into hacking. You can run workshops to introduce participants to the subject of the hackathon or to particular technical skills useful for the hackathon. Workshops can also be places to have a discussion about issues in the field related to the hackathon. Workshops should be interactive as much as possible</p>
-
-        <p>Choose your workshop leaders carefully. Ideally the leaders have run the same workshop before so they are well rehearsed. They should also be as diverse as the attendees you would like to see present at the event (gender, race, age, etc.). Read the <a href="http://conference.hopper.org.nz/#speakers">Hopper Conference Diversity Guide</a>&rsquo;s tips on selecting speakers.</p>
-
-        <p>Run the workshops in a second room if at all possible. 45-90 minute workshops are a good length. If you have more than one workshop, leave 15-30 minutes free between workshops to allow for the first leader to close up and the second leader to set up.</p>
-
-        <p>At Open Data Day DC, we have run six workshops over two days on an introduction to open data and APIs, an introduction to collaboration using github, open mapping, an introduction to Python, and community engagement.</p>
+        <p>一旦 hacking 开始，不要随意打扰极客们<em>除非</em>是为了确保 hacking
+          得更顺利，为了检查每个人都有事可做，以及为了使大家都了解并保持在整体时间安排内。对于正迫切解决问题的参与者来说，诸如午餐演讲和远程视频会与等午间活动对他们来说非常地分散他们的注意力。</p>
 
 
+        <h2 id="training">培训</h2>
 
-        <h2 id="venue">Venue &amp; date</h2>
+        <p>一场成功的黑客松活动可能只有 hacking，或只有培训，或两者都有。</p>
 
-        <h3>Basic requirements</h3>
+        <p>如果你有显著数量的新来者，为他们组织一些培训交流会能够让他们更舒服地参与到后续的 hacking
+          活动中。你可以通过组织交流会向参与者介绍黑客松的主题或有益于黑客松活动的特定的技能知识。交流会还可以就与活动主题相关的问题展开话题讨论。交流会应该尽可能的互动。</p>
 
-        <p>Find a venue to host your event and reserve the date. This is the only thing you need to do significantly in advance of the event. The earlier you can reserve space the better.</p> 
+        <p>谨慎选择你的交流会负责人。理想的负责人是有过类似的交流会的组织经验。同时你应该更乐于见到出席人员应该尽可能的像与会者一样的多元化（性别，民族，年龄等）。阅读 <a href="http://conference.hopper.org.nz/#speakers">《Hopper
+            会议多元化指南（Hopper Conference Diversity Guide）》</a> 获取更多关于演讲者选择的建议。</p>
 
-        <p>Find a venue that can provide:</p>
+        <p>如果场地允许，交流会应该在另一个房间举行，以 45-90 分钟时长为宜。如果你组织了多个交流会，交流会间应该留出 15-30 分钟时间以允许上一位主讲总结收尾以及下一位主讲进行开场准备。</p>
+
+        <p>在 Open Data Day DC 中，两天时间内我们共组织了六场交流会，包括开放数据和 API 简介，基于 github 的协作指导，开映射，Python 指导，以及社区激励活动。</p>
+
+
+
+        <h2 id="venue">活动地点和活动日期</h2>
+
+        <h3>基本条件</h3>
+
+        <p>你需要找到并预约一块能够用于主办活动的场地。在活动开始前，这是你需要做的最重要的事情。越早预约场地越好。</p>
+
+        <p>场地需要满足：</p>
 
         <ul>
-          <li>Proper seating (see below)</li>
-          <li>One power strip per table</li>
-          <li>Wifi (is it fast and reliable? can it connect all of your participants? does it block any ports?)</li>
-          <li>Projector</li>
-          <li>A microphone, at least in large rooms</li>
-          <li>Accessible entrances and wheelchair-friendly seating space (and if there is a stage, check if it is accessible, if applicable)</li>
-          <li>Gender-neutral, single-occupancy, accessible bathrooms</li>
+          <li>合适的桌椅（见下文）</li>
+          <li>每张桌子上都有电源</li>
+          <li>Wifi（是否高速稳定？是否满足所有参与者同时连接需求？是否禁用了任何端口？）</li>
+          <li>投影仪Projector</li>
+          <li>话筒，至少主要的屋子得有</li>
+          <li>无障碍通道和轮椅友好的座位空间（以及如果有舞台的话，检查其是否无障碍且可用的）</li>
+          <li>无性别区分的，单人间的，无障碍厕所</li>
         </ul>
 
-        <p>(If you are running a large event, also read through <a href="http://conference.hopper.org.nz/#environment">all of the accessibility concerns listed here</a>.)</p>
+        <p>（如果你正打算举办的是一场大型活动，请阅读<a href="http://conference.hopper.org.nz/#environment">《无障碍考量完整清单（all of the
+            accessibility concerns listed here）》</a>）</p>
 
-        <h3>Seating</h3>
+        <h3>活动桌椅</h3>
 
-        <p>Seating requirements are different for hacking and workshops. For hacking, you will want a banquet-style setup with large circular tables that seat about 10 people each. Rooms in banquet-setup hold the <i>fewest</i> number of people compared to other table/chair arrangements, so take that into account when computing capacity. For workshops you will want classroom-style seating, i.e. rectangular tables with chairs on one side.</p>
+        <p>hacking 和交流会所需要的桌椅要求是不一样的。你最好为 hacking 安排的是每桌能够容纳约 10 人的宴会圆桌。摆放了宴会桌的屋子相较于其他桌椅摆设能够容纳的人数是<i>最少的</i>，所以在计算容纳人数是务必将此项考虑进去。而对于交流会来说，教室里的桌椅就够了，譬如矩形桌子配一张椅子即可。</p>
 
-        <h3>When</h3>
+        <h3>何时举办</h3>
 
-        <p>Choose the date of your event carefully. Avoid the summer, holidays, and other major events in your field. Weekends are hard for people who are attending in their professional capacity. Weeknights are hard for parents.</p>
+        <p>慎重地选择活动举办的时间。避免挑选在夏天、假期或者当地其他重要的日子。周末可能会降低参与者的职业能力，而对有小孩的家长来说，则很难在周内的晚上抽出身来。</p>
 
-        <p>Ask your venue about permissible start and end times. Set times for when you will arrive/leave and for when participants will arrive/leave. Plan at least 30 minutes before and after the event for you to set up and tear-down/cleanup.</p>
+        <p>询问并根据活动地点的开门和闭门时间，确定你的到场和离场时间安排，以及参与者的到场和离场时间。在活动的前后各计划不少于 30 分钟的时间用于布置和打扫活动场地。</p>
 
-        <p>Make sure you can get in and that your participants can get in. If the building&rsquo;s front door is locked, make sure you have a key and that you have someone posted at the door to let in participants (you may need a team of people to rotate at the front door throughout the day).</p>
+        <p>确保你和参与者可以进入到活动场地。如果楼栋的前门是锁着的，确保你有钥匙或者有专人把守门口让参与者进入（你可能需要一组人负责全天的开关门工作了）。</p>
 
-        <h3>Also check...</h3>
+        <h3>还需检查……</h3>
 
-        <p>Check whether the venue permits you to have food in the room.</p>
+        <p>检查场地是否允许将食物带入室内。</p>
 
-        <p>If holding the event outside of business hours, check that the venue will have air conditioning/heating.</p>
+        <p>如果是在工作时间以外的时间举办的活动，检查场地是否还提供空调或暖气。</p>
 
-        <h3>Budgeting your venue</h3>
+        <h3>场地预算</h3>
 
-        <p>Professional venues charge quite a bit of money, so you will need to find something that fits your budget. Hopefully you can find some free space with good wifi (your local library, a friend&rsquo;s company, etc.).</p>
+        <p>专业的场地通常需要高额的费用，所以你需要确保场地的费用符合你的预算。但愿你能找到有良好 wifi 覆盖的空场地（当地图书馆、朋友的公司之类）。</p>
 
-        <p>For a large, one-full-day event in a major city, expect venues to change in the thousands of dollars per day. It depends on how much space you need, and there is no rhyme or reason to pricing, but it usually comes out to about $10-$30 per person.</p>
-
-
-        <h2 id="sponsorship">Sponsorship</h2>
-
-        <p>For large events, you will probably need sponsors to help you cover the costs.</p>
-
-        <p>Sponsors will give you something &mdash; cash, space, food, t-shirts &mdash; with the expectation that they get something out of their support for your event. They might be recruiting/hiring and are looking to scout out your attendees, or they might be marketing a product that they want to promote.</p>
-
-        <p>Think about what you&rsquo;re willing to give sponsors in return for their support. You will certainly thank your sponsors, by name, during your opening and closing session, and you will probably want to tweet your thanks too. Beyond that, do you want to give them a time at a podium to speak to your attendees? Or a table in the back to show off their stuff? It&rsquo;s up to you, and you have to strike the right balance between bringing in enough sponsorships with not interfering with the goals of your event.</p>
-
-        <p>Figure out your budget &mdash; your venue and food costs, especially &mdash; first, so you know how much in sponsorships you need. But then get started on securing sponsors early.</p>
+        <p>在主要城市组织一场大型的全天活动，预计每天的场地费用大概在数千美元左右。这取决于你需要多大的场地，一般很难确定价格，但通常会在人均 10~30 美元左右。</p>
 
 
-        <h2 id="food">Food</h2>
+        <h2 id="sponsorship">赞助商</h2>
 
-        <p>Ideally you should provide coffee and light fare for breakfast and beverages throughout the day (especially water). Food is surprisingly expensive though, so do what you can.</p>
+        <p>对于大型活动而言，你通常需要赞助商来帮助你完成这些费用。</p>
 
-        <h3>What to buy</h3>
+        <p>赞助商会给你提供 —— 现金、场地、食物、T恤 —— 他们也期待着为你的活动提供各类的帮助的情况下获得益处。他们可能会关注活动的参与者并从中招募、雇佣他们，或者 他们可能在现场为他们的产品做市场推广。</p>
 
-        <p>If you provide any food, you really <i>must</i> supply vegetarian and dairy-free options because these dietary restrictions are very common. Going all-vegetarian isn&rsquo;t a bad idea. After that, give consideration to other restrictions your participants may have (vegan, kosher, gluten-free) and do your best.</p>
+        <p>考虑一下你愿意给赞助商带来什么样的回报。你肯定会在开幕和闭幕环境点名感谢你的赞助商，你也可能可以通过发微博来感谢他们。除此之外，你可以为他们提供一小段时间向参与者演讲？或者在会场后面安排一张桌子摆放他们的资料？这取决于你，你需要认真考量获得足够多的赞助商和确保他们不影响活动本身的目标间的平衡。</p>
 
-        <p>Be responsible with your food. Think like a parent. Order food that is relatively healthy. Avoid heavy foods that make people sleepy (like bread) or ineffective (like alcohol). Caffeine and sugar are fine (energy is important), but have real nourishment too..</p>
-
-        <h3>Budgeting and logistics</h3>
-
-        <p>Figure on $7 to $15 per person. Pizza is the cheapest food to get, but it&rsquo;s also basically the worst thing you can possibly feed someone (and not everyone eats it) &mdash; avoid pizza if you can.</p>
-
-        <p>If you are ordering food, you will probably place the order at least three days ahead of the event.</p>
+        <p>确认你的预算 —— 场地和餐饮开销，尤其是第一点，以确定你需要问赞助商要多少钱。同时，记得尽早确定备选赞助商。</p>
 
 
-		<h2 id="swag">Swag</h2>
+        <h2 id="food">食物</h2>
 
-		<p>Some events like to provide swag, like t-shirts or stickers. Personally I think there are much better ways to spend your budget, but if you really want to provide swag keep in mind&ndash;</p>
+        <p>理想情况下，你应该提供咖啡和轻餐作为早餐，以及全天候的饮料（尤其是水）。当然由于食物的开销较大，你尽可能满足即可。</p>
 
-		<p>Don&rsquo;t get one-size-fits-all t-shirts because people aren&rsquo;t all alike. In fact, read <a href="http://conference.hopper.org.nz/#tshirts">Hopper Conference Diversity Guide&rsquo;s section on t-shirts</a>.</p>
+        <h3>采购什么</h3>
+
+        <p>如果你提供食物，<i>务必</i>提供素食和不含牛奶的食品选项，因为这些是常见的食品限制。全素食品也是个不错的方案。除此之外，尽可能地为你的参与者考虑其他各类食物限制（素食、犹太食品、无麸质食品）。</p>
+
+        <p>你需要像家长一样对食品安全负责。点相对健康的食物。避免容易让人昏昏欲睡和低效的油腻食物（譬如面包和酒水）。可以选择咖啡因和糖（能量补充很重要），还有真正有营养的食物。</p>
+
+        <h3>预算和送餐物流</h3>
+
+        <p>按人均 7~15 美元计算。披萨是最便宜的食物，但同时基本上也是你可以提供的最糟糕的食物（不是每个人都吃的）—— 所以尽量避免披萨。</p>
+
+        <p>如果你点餐的话，通常最好至少提前三天就预定好相关的餐食。</p>
 
 
-        <h2 id="coc">Code of conduct</h2>
+        <h2 id="swag">纪念品</h2>
 
-        <p>Technology events have a history of not always being welcoming to women and minorities. We need to change that. You can be a part of that change by adopting a code of conduct for the event. A code of conduct is not just about enforcing rules. It sets community norms and sends a signal to would-be participants that you are trying to create a welcoming environment. And, of course, if there is a problem at your event having a code of conduct ahead of time will help you resolve the issue.</p>
+        <p>一些活动会提供纪念品，譬如 T 恤或者贴纸。个人认为你有更好的办法来使用你的预算，但如果你确实想发纪念品，那么记得考虑下面的问题 ——</p>
 
-        <p>Look for codes of conduct used at events you admire, or copy from <a href="http://codefordc.org/resources/codeofconduct.html">Code for DC&rsquo;s code of conduct</a> or <a href="http://techladyhackathon.org/codeofconduct">Tech Lady Hackathon + Training Day&rsquo;s code of conduct</a>. Also read the <a href="http://conference.hopper.org.nz/#coc">Hopper Conference Diversity Guide</a>&rsquo;s section on this.</p>
+        <p>不要买通版的 T 恤，因为大家长得并不一样。事实上，你可以参考 <a href="http://conference.hopper.org.nz/#tshirts">Hopper
+          Conference Diversity Guide&rsquo;s section on t-shirts</a>。</p>
+
+
+        <h2 id="coc">行为规范</h2>
+
+        <p>Technology events have a history of not always being welcoming to women and minorities. We need to change
+          that. You can be a part of that change by adopting a code of conduct for the event. A code of conduct is not
+          just about enforcing rules. It sets community norms and sends a signal to would-be participants that you are
+          trying to create a welcoming environment. And, of course, if there is a problem at your event having a code
+          of conduct ahead of time will help you resolve the issue.</p>
+
+        <p>Look for codes of conduct used at events you admire, or copy from <a href="http://codefordc.org/resources/codeofconduct.html">Code
+            for DC&rsquo;s code of conduct</a> or <a href="http://techladyhackathon.org/codeofconduct">Tech Lady
+            Hackathon + Training Day&rsquo;s code of conduct</a>. Also read the <a href="http://conference.hopper.org.nz/#coc">Hopper
+            Conference Diversity Guide</a>&rsquo;s section on this.</p>
 
 
         <h2 id="happy">Happy hours</h2>
 
-        <p>A pre-event happy hour the night before helps participants to get to know each other in a relaxing setting. A post-event happy hour the evening after the hackathon wraps up gives participants a chance to socialize now that they know each other.</p>
+        <p>A pre-event happy hour the night before helps participants to get to know each other in a relaxing setting.
+          A post-event happy hour the evening after the hackathon wraps up gives participants a chance to socialize now
+          that they know each other.</p>
 
-        <p>For large events, pick a bar ahead of time and talk to the bar and make sure it is ok for you to bring a large group. You may want to reserve a section of the bar (they may ask for a payment ahead of time or a guaranteed minimum spend that they will charge you after if your people don&rsquo;t order enough).</p>
+        <p>For large events, pick a bar ahead of time and talk to the bar and make sure it is ok for you to bring a
+          large group. You may want to reserve a section of the bar (they may ask for a payment ahead of time or a
+          guaranteed minimum spend that they will charge you after if your people don&rsquo;t order enough).</p>
 
-		<p>If you are serving alcohol keep in mind: not everyone drinks (those under 21, pregnant women, and many many other people for a variety of reasons); alcohol can lead to an unsafe or uncomfortable environment; those that drink will need public transportation to get home. So therefore: provide non-alcoholic drinks; supervise the environment to ensure it remains professional and comfortable for all; be near public transit.</p>
+        <p>If you are serving alcohol keep in mind: not everyone drinks (those under 21, pregnant women, and many many
+          other people for a variety of reasons); alcohol can lead to an unsafe or uncomfortable environment; those
+          that drink will need public transportation to get home. So therefore: provide non-alcoholic drinks; supervise
+          the environment to ensure it remains professional and comfortable for all; be near public transit.</p>
 
 
 
-        <h2 id="registration">Registration</h2>
+        <h2 id="registration">报名</h2>
 
-        <p>Set up an <a href="https://www.eventbrite.com">Eventbrite</a> registration form.</p>
+        <p>制作并发布一个 <a href="https://www.eventbrite.com">Eventbrite</a> 上的报名表单</p>
 
-        <h3>Registration Limit</h3>
+        <h3>报名限制</h3>
 
-        <p>Determine your maximum capacity. For an event with parallel tracks, bear in mind that participants will all gather in one room at the start of the event, so your maximum capacity is a little larger than the capacity of your main room (some people can squeeze/stand at the beginning).</p>
+        <p>Determine your maximum capacity. For an event with parallel tracks, bear in mind that participants will all
+          gather in one room at the start of the event, so your maximum capacity is a little larger than the capacity
+          of your main room (some people can squeeze/stand at the beginning).</p>
 
-        <p>For a free event, about 65% of those who register will actually show up. This number is very consistently seen across events. So cap registration at 150% of your actual maximum capacity.</p>
+        <p>For a free event, about 65% of those who register will actually show up. This number is very consistently
+          seen across events. So cap registration at 150% of your actual maximum capacity.</p>
 
         <h3>Gather info</h3>
 
@@ -272,20 +314,24 @@
           <li>Email address</li>
           <li>Job title</li>
           <li>Are they new to hackathons?</li>
-          <li>What kind of hacker are they? Examples: Developer. Designer. Data Scientist. Domain Expert. Government Staff. Communicator. Project Manager. Advocate.</li>
+          <li>What kind of hacker are they? Examples: Developer. Designer. Data Scientist. Domain Expert. Government
+            Staff. Communicator. Project Manager. Advocate.</li>
           <li>What are they interested in hacking on? (free form question)</li>
           <li>Are they interested in any of the workshops?</li>
           <li>How they heard about the event</li>
           <li>Special needs/requests</li>
         </ul>
 
-        <p>The more information you can gather ahead of time the better planning you can do. You can start to think about who will be working on what as soon as registrations start coming. Literally try to imagine how each registered participant will keep occupied at the event based on whatever information you know about them.</p>
+        <p>The more information you can gather ahead of time the better planning you can do. You can start to think
+          about who will be working on what as soon as registrations start coming. Literally try to imagine how each
+          registered participant will keep occupied at the event based on whatever information you know about them.</p>
 
         <h2 id="ten">Ten days before</h2>
 
         <h3>Find project leaders</h3>
 
-        <p>Look at who is coming and if you know some of those people are coming with particular projects, identify project leaders. You may also want to meet with them at this time to:</p>
+        <p>Look at who is coming and if you know some of those people are coming with particular projects, identify
+          project leaders. You may also want to meet with them at this time to:</p>
 
         <ul>
           <li>Guide them on how to make progress on their projects</li>
@@ -298,26 +344,33 @@
 
         <h3>Find helpers</h3>
 
-        <p>If you are running interactive workshops where the participants are following along on their laptops and expect many participants to attend, you may want to have workshop helpers around to help participants that get stuck. Plan for at least one helper for every 10-20 participants.</p>
+        <p>If you are running interactive workshops where the participants are following along on their laptops and
+          expect many participants to attend, you may want to have workshop helpers around to help participants that
+          get stuck. Plan for at least one helper for every 10-20 participants.</p>
 
-        <p>Also find helpers to run a registration table and the building&rsquo;s front door if it is locked, and you can also consider identifying volunteers to take point on photography, managing social media, and documenting what happens at the event for storytelling afterward.</p>
+        <p>Also find helpers to run a registration table and the building&rsquo;s front door if it is locked, and you
+          can also consider identifying volunteers to take point on photography, managing social media, and documenting
+          what happens at the event for storytelling afterward.</p>
 
         <h3>Email attendees</h3>
 
-        <p>You may want to email the registered attendees at this point with as much of the logistics information as you know, so that they can plan ahead. See &ldquo;The day before&rdquo; below for what to include in the email.</p>
+        <p>You may want to email the registered attendees at this point with as much of the logistics information as
+          you know, so that they can plan ahead. See &ldquo;The day before&rdquo; below for what to include in the
+          email.</p>
 
 
         <h2 id="three">Three days before</h2>
 
         <h3>Set up group communication</h3>
 
-        <p>Set up a way for your participants to communicate digitally and stay in touch after the event. Some options are:</p>
+        <p>Set up a way for your participants to communicate digitally and stay in touch after the event. Some options
+          are:</p>
 
         <ul>
-        	<li>A chat room, like <a href="https://slack.com/">Slack</a></li>
-        	<li>A social media channel, like a hashtag on Twitter or a Facebook group</li>
-        	<li>A shared document space, like Google Docs or <a href="https://www.dropbox.com/paper">Dropbox Paper</a></li>
-        	<li>An email list, like a Google Group</li>
+          <li>A chat room, like <a href="https://slack.com/">Slack</a></li>
+          <li>A social media channel, like a hashtag on Twitter or a Facebook group</li>
+          <li>A shared document space, like Google Docs or <a href="https://www.dropbox.com/paper">Dropbox Paper</a></li>
+          <li>An email list, like a Google Group</li>
         </ul>
 
         <h3>Think about how you will tell your story</h3>
@@ -326,9 +379,12 @@
 
         <ul>
           <li>Choose a hashtag.</li>
-          <li>Set up a <a href="https://www.tumblr.com/">tumblr</a> or other public shared document space (see above) for projects to record progress and post links.</li>
-          <li>Think about <a href="http://paulclarke.com/photography/blog/the-hack-day/">how to take photos of your hackathon</a> that tell its story.</li>
-          <li>Read Nathan Matias and Willow Brugh&rsquo;s <a href="https://civic.mit.edu/blog/natematias/media-making-strategies-to-support-community-and-learning-at-hackathons">media-making strategies</a> for hackathons.</li>
+          <li>Set up a <a href="https://www.tumblr.com/">tumblr</a> or other public shared document space (see above)
+            for projects to record progress and post links.</li>
+          <li>Think about <a href="http://paulclarke.com/photography/blog/the-hack-day/">how to take photos of your
+              hackathon</a> that tell its story.</li>
+          <li>Read Nathan Matias and Willow Brugh&rsquo;s <a href="https://civic.mit.edu/blog/natematias/media-making-strategies-to-support-community-and-learning-at-hackathons">media-making
+              strategies</a> for hackathons.</li>
         </ul>
 
         <h3>Acquire supplies</h3>
@@ -348,12 +404,16 @@
           <li>Place any food catering orders</li>
           <li>Email any journalists you know who may be interested in the event</li>
           <li>Charge your camera so you are ready to take photos</li>
-          <li>Some venues require a list of participants for security. If you need to submit a list, make sure you alphabetize it! Security will probably print whatever you have as-is and things get complicated quickly when the list is not in order.</li>
+          <li>Some venues require a list of participants for security. If you need to submit a list, make sure you
+            alphabetize it! Security will probably print whatever you have as-is and things get complicated quickly
+            when the list is not in order.</li>
         </ul>
 
         <h3>Email attendees again</h3>
 
-        <p>You may want to email the registered attendees at this point, again, with as much of the logistics information as you know, so that they can plan ahead. See &ldquo;The day before&rdquo; below for what to include in the email.</p>
+        <p>You may want to email the registered attendees at this point, again, with as much of the logistics
+          information as you know, so that they can plan ahead. See &ldquo;The day before&rdquo; below for what to
+          include in the email.</p>
 
 
         <h2 id="one">The day before</h2>
@@ -375,7 +435,8 @@
 
         <ul>
           <li>Go over the list above once for the hacking room and again for the training room</li>
-          <li>Ensure you have enough space to hold everyone in one room because participants will gather in one room first for the welcoming session</li>
+          <li>Ensure you have enough space to hold everyone in one room because participants will gather in one room
+            first for the welcoming session</li>
         </ul>
 
         <h3>Email blast</h3>
@@ -383,13 +444,15 @@
         <p>Send out a logistics email to registered participants. Include:</p>
 
         <ul>
-          <li>Your contact information, including your cell phone number so participants can call/text you if they cannot find the venue</li>
+          <li>Your contact information, including your cell phone number so participants can call/text you if they
+            cannot find the venue</li>
           <li>Any pre-event and post-event happy hour information: location, date, and time</li>
           <li>Start and end dates and times of the event</li>
           <li>Location of the event (address and building name), exact location of entrance, directions, and map</li>
           <li>Reminder to bring ID if the venue has a security check-in</li>
           <li>Reminder to bring a laptop and charger</li>
-          <li>What food/beverages will be provided and when (breakfast, lunch, dinner?), and what restrictions will be accommodated (vegetarian, etc.)</li>
+          <li>What food/beverages will be provided and when (breakfast, lunch, dinner?), and what restrictions will be
+            accommodated (vegetarian, etc.)</li>
           <li>Schedule of workshops, if applicable</li>
           <li>Your code of conduct (or a link)</li>
           <li>If there are any disability accessibility issues with the venue, include that</li>
@@ -430,7 +493,8 @@
           <li>Make sure things are OK: tables/chairs are there, the projector works, restrooms are in working order</li>
           <li>Post signs from the main entrance of the building to where participants should go first</li>
           <li>Post signs to restrooms and any other rooms participants may need to go to</li>
-          <li>Lay out the name badges. If they are printed with names, lay them out alphabetically and if there are a lot group them by part of the alphabet and post signs.</li>
+          <li>Lay out the name badges. If they are printed with names, lay them out alphabetically and if there are a
+            lot group them by part of the alphabet and post signs.</li>
         </ul>
 
         <h3>Welcoming session</h3>
@@ -444,24 +508,39 @@
           <li>Mention the code of conduct (again, the point is often to set norms, not merely to enforce rules)</li>
           <li>Ask who has not been to a hackathon before, or to your particular event before; give an applause</li>
           <li>Explain logistics: the Tumblr, the schedule of workshops, lunch, end time</li>
-          <li>Encourage people to take and share session notes and to record progress on projects (see the notes above on telling the hackathon&rsquo;s story)</li>
+          <li>Encourage people to take and share session notes and to record progress on projects (see the notes above
+            on telling the hackathon&rsquo;s story)</li>
         </ul>
 
         <p>In a small event (up to about 30 people), you can have all of the participants introduce themselves.</p>
 
-        <p>Anyone who has brought a project to work on should then introduce the project to everyone. This is sometimes called &ldquo;project pitches.&rdquo; Keep each pitch short: the leader&rsquo;s name and affiliation, a problem statement, the solution, and the skills/help needed. Project leaders tend to talk for as long as they can, so you may need to cut them off after one minute to be respectful of the audience&rsquo;s time. Encourage leaders to think of this not as recruiting but as boasting how awesome their day is going to be.</p>
+        <p>Anyone who has brought a project to work on should then introduce the project to everyone. This is sometimes
+          called &ldquo;project pitches.&rdquo; Keep each pitch short: the leader&rsquo;s name and affiliation, a
+          problem statement, the solution, and the skills/help needed. Project leaders tend to talk for as long as they
+          can, so you may need to cut them off after one minute to be respectful of the audience&rsquo;s time.
+          Encourage leaders to think of this not as recruiting but as boasting how awesome their day is going to be.</p>
 
         <h3>During the day</h3>
 
-        <p>Have someone managing the hacking room. Go around to check that every project is going smoothly. See if anyone needs anything or can&rsquo;t find something to work on. Keep people on the overall schedule. Alert everyone when it is time for lunch and one hour before the wrap-up session. Leading up to wrap-up, make sure each project is prepared to explain what they did. Get them to record their progress on the tumblr.</p>
+        <p>Have someone managing the hacking room. Go around to check that every project is going smoothly. See if
+          anyone needs anything or can&rsquo;t find something to work on. Keep people on the overall schedule. Alert
+          everyone when it is time for lunch and one hour before the wrap-up session. Leading up to wrap-up, make sure
+          each project is prepared to explain what they did. Get them to record their progress on the tumblr.</p>
 
-        <p>Have someone managing workshops. Make sure workshops stay on schedule, that participants are understanding the leader, can hear the leader from the back of the room, etc. Be around to ensure that the workshop leader doesn&rsquo;t have any technology problems. An organizer should be on hand at the workshops at all times.</p>
+        <p>Have someone managing workshops. Make sure workshops stay on schedule, that participants are understanding
+          the leader, can hear the leader from the back of the room, etc. Be around to ensure that the workshop leader
+          doesn&rsquo;t have any technology problems. An organizer should be on hand at the workshops at all times.</p>
 
         <h3>Wrap-up</h3>
 
-        <p>The wrap-up session gives everyone a chance to hear what everyone else worked on during the day. For a small group, ask volunteers to report what they accomplished or what they learned (especially for workshop participants). Give folks rounds of applause.</p>
+        <p>The wrap-up session gives everyone a chance to hear what everyone else worked on during the day. For a small
+          group, ask volunteers to report what they accomplished or what they learned (especially for workshop
+          participants). Give folks rounds of applause.</p>
 
-        <p>In large groups, have each project report on its accomplishments. If possible, let them show their work on the projector. But keep things quick. By this point projects may have a lot to say. Keep each project to 1 or 2 minutes, and if they are going to show something on the projector make sure it is ready before the wrap-up session begins.</p>
+        <p>In large groups, have each project report on its accomplishments. If possible, let them show their work on
+          the projector. But keep things quick. By this point projects may have a lot to say. Keep each project to 1 or
+          2 minutes, and if they are going to show something on the projector make sure it is ready before the wrap-up
+          session begins.</p>
 
         <p>Finally:</p>
 
@@ -481,70 +560,80 @@
           <li>Check for lost items</li>
         </ul>
 
-        <h2 id="post">Post-mortem</h2>
+        <h2 id="post">项目总结</h2>
 
-        <p>After the event:</p>
+        <p>活动结束后：</p>
 
         <ul>
-          <li>Write down everything that went right so you can repeat it next time</li>
-          <li>Write down everything that went wrong so you can avoid it next time</li>
-          <li>Compute how much the event cost in total and per participant, just to know</li>
-          <li>Survey the attendees about what they liked and didn&rsquo;t like</li>
-          <li>Blog about the event</li>
+          <li>记录下所有优点以在下一次活动中保持</li>
+          <li>记录下所有问题以在下一次活动中避免</li>
+          <li>计算活动全部开销以及每个参与者的花销，知道就好了</li>
+          <li>问卷调查参与者对活动的喜恶意见</li>
+          <li>博客记录活动情况</li>
         </ul>
 
+    </div>
+
+    <hr>
+
+    <footer>
+      <p>&copy; Joshua Tauberer 2014-2017。作者：Joshua Tauberer，译者：任琦磊（Ren Qilei），可在 <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY
+          4.0</a> 授权下自由使用。</p>
+    </footer>
+  </div> <!-- /container -->
+
+  <!-- bootstrap-helpers: typical modal dialog -->
+  <div id="global_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="errorModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="errorModalTitle"> </h4>
+        </div>
+        <div class="modal-body">
+          <p> </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Yes</button>
+        </div>
       </div>
+    </div>
+  </div>
 
-      <hr>
+  <!-- bootstrap-helpers: ajax loading indicator -->
+  <div id="ajax_loading_indicator" style="display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; text-align: center; background-color: rgba(255,255,255,.75)">
+    <div style="margin: 20% auto">
+      <div><span class="glyphicon glyphicon-time"></span></div>
+      <div>Loading...</div>
+    </div>
+  </div>
 
-      <footer>
-        <p>&copy; Joshua Tauberer 2014-2017. Feel free to use under the terms of <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.</p>
-      </footer>
-    </div> <!-- /container -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-        <!-- bootstrap-helpers: typical modal dialog -->
-        <div id="global_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="errorModalTitle" aria-hidden="true">
-          <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="errorModalTitle"> </h4>
-              </div>
-              <div class="modal-body">
-                <p> </p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Yes</button>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-        <!-- bootstrap-helpers: ajax loading indicator -->
-        <div id="ajax_loading_indicator" style="display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; text-align: center; background-color: rgba(255,255,255,.75)">
-          <div style="margin: 20% auto">
-            <div><span class="glyphicon glyphicon-time"></span></div>
-            <div>Loading...</div>
-          </div>
-        </div>
+  <script src="static/js/bootstrap-helpers.js"></script>
+  <script src="static/js/main.js"></script>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script>
+    var ga_account_id = 'UA-XXXXX-X';
+    if (ga_account_id != 'UA-XXXXX-X') {
+      (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+          function () {
+            (b[l].q = b[l].q || []).push(arguments)
+          });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+      }(window, document, 'script', 'ga'));
+      ga('create', ga_account_id);
+      ga('send', 'pageview');
+    }
+  </script>
+</body>
 
-        <script src="static/js/bootstrap-helpers.js"></script>
-        <script src="static/js/main.js"></script>
-
-        <script>
-        var ga_account_id = 'UA-XXXXX-X';
-        if (ga_account_id != 'UA-XXXXX-X') {
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create',ga_account_id);ga('send','pageview');
-        }
-        </script>
-    </body>
 </html>
